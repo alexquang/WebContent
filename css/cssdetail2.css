@@ -1,0 +1,45 @@
+.img-thumbnail {
+	border:0px !important;
+}
+
+.dttitleorther{
+	
+}
+.dttitleorther ul{
+	list-style: none;
+}
+.dttitleorther li{
+	line-height: 25px;
+	
+}
+.dttitleorther h4{
+	margin-left: 15px !important;
+}
+.dttitlelst{
+	text-align: center;
+	border: 1px solid #F36323;
+	border-radius:3px;
+}
+.dtimglogo{
+	text-align: center;
+}
+.dttitleforjob{
+	border-top:1px dotted #F36323;
+	text-align: right;
+}
+.dtcontentforjob{
+	border-left: 1px dotted #F36323;
+	border-bottom: 1px dotted #F36323;
+	line-height: 25px;	
+}
+.dtformatortherline{
+	color:#BB2D2D;
+	text-decoration: underline;
+}
+.dtbreakline{
+	
+}
+.dtbreaklinepadding {
+	padding-left: 0px !important;
+    padding-right: 0px !important;
+}

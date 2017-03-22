@@ -10,61 +10,22 @@
 </head>
 <body>
 
-<!-- <div class="dropdown"> -->
-<!--     <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#"> -->
-<!--       <span id="selected">Chose option</span><span class="caret"></span></a> -->
+
+<div class="image-container">
+  <img class="scale" data-scale="best-fit-down" data-align="center" src="https://static.chotot.com.vn/wm_images/46/4696483067.jpg">
+</div>  
   
-  
-  
-  
-  
-<!--   <ul class="dropdown-menu"> -->
-<!--     <li><a href="#">Option 1</a></li> -->
-<!--     <li><a href="#">Option 2</a></li> -->
-<!--     <li><a href="#">Option 3</a></li> -->
-<!--     <li><a href="#">Option 4</a></li> -->
-<!--   </ul> -->
-<!-- </div> -->
-<!-- Tabs -->
-<ul id="userProfileTab" class="nav nav-tabs">
-    <li class="dropdown">
-            <a aria-expanded="false" aria-haspopup="true" role="button" id="dropdown0" data-toggle="dropdown" class="dropdown-toggle" href="#">
-      <span id="selected1">Chose option</span><span class="caret"></span></a>
-        <ul class="dropdown-menu" id="dropdown0">
-            <li><a href="#cheeseContributions" data-toggle="tab">Cheeses1</a></li>
-            <li><a href="#producerContributions" data-toggle="tab">Producers1</a></li>
-        </ul>
-    </li>
-    <li class="dropdown">
-            <a aria-expanded="false" aria-haspopup="true" role="button" id="dropdown1" data-toggle="dropdown" class="dropdown-toggle" href="#">
-      <span id="selected2">Chose option</span><span class="caret"></span></a>
-        <ul class="dropdown-menu" id="dropdown1">
-            <li><a href="#cheeseReviews" data-toggle="tab">Cheeses2</a></li>
-            <li><a href="#producerReviews" data-toggle="tab">Producers2</a></li>
-        </ul>
-    </li>
-</ul>
-<!-- /Tabs -->
-<!-- Tab Content -->
-<div id="userProfileTabContent" class="tab-content">
-    <div class="tab-pane fade" id="cheeseContributions">
-        <div class="row-fluid">...</div>
-    </div>
-    <div class="tab-pane fade" id="producerContributions">
-        <div class="row-fluid">...</div>
-    </div>
-    <div class="tab-pane fade" id="cheeseReviews">
-        <div class="row-fluid">...</div>
-    </div>
-    <div class="tab-pane fade" id="producerReviews">
-        <div class="row-fluid">...</div>
-    </div>
-</div>
-<!-- Tab Content -->
 
 	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/image-scale.js"></script>
 	<script type="text/javascript" src="js/dropdown.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
+	
+	<script type="text/javascript">
+	$(function() {
+		  $("img.scale").imageScale();
+		});
+	</script>
 </body>
 </html>

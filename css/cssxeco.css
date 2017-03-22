@@ -1,0 +1,9 @@
+.imgtitle {
+	padding: 0px !important;
+}
+
+.imgtitle img {
+	width: 100%;
+	max-height: 200px;
+	object-fit: cover;
+}
