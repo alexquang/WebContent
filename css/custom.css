@@ -1,3 +1,7 @@
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
+
 body {
 	background-color: #ebeced !important;
 	overflow-x: hidden;
@@ -51,7 +55,7 @@ body {
 .borderlink {
 	padding: 3px;
 	text-align: right;
-	background-color: rgb(2, 119, 182);
+	background-color: #002e4e;
 }
 
 .borderlink a {
@@ -65,11 +69,13 @@ body {
 
 .img {
 	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
 .img img {
 	width: 100px;
 	height: 100px;
+	object-fit: contain;
 }
 
 h3 {
@@ -80,7 +86,6 @@ h6 {
 	color: #000000 !important;
 	font-weight: bold !important;
 	text-align: left;
-	margin-left: 140px !important;
 	min-width: 300px;
 }
 
@@ -239,7 +244,8 @@ hr {
 	text-align: left !important;
 }
 .positionjob h6{
-	
+	line-height: 20px;
+	margin-left: 90px;
 }
 
 .positionjob h6 a{
@@ -262,10 +268,10 @@ hr {
 .language li a{
 	text-align: right;
 }
-
-
-
-
+.colorforheader{
+	 color: #9c3634 !important;
+	 margin-top: 25px;
+}
 
 
 

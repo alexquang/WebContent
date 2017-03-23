@@ -25,7 +25,9 @@
 	
 }
 .imgcompanydetails img{
-
+	width: 150px;
+	height: 100px;
+	object-fit: contain;
 }
 h4{
 	font-weight: bold;
