@@ -1,0 +1,113 @@
+@media (max-width: 768px){
+	.col-xs-12{
+		padding-left: 5px !important;
+		padding-right: 5px !important;
+		margin: auto;
+	}
+	.colorforheader{
+		color: #9c3634 !important;
+    	margin-top: 0px !important;
+    	font-size: 14px !important;
+	}
+	.namecompany{
+		font-size: 14px !important;
+		margin: auto;
+		text-transform: capitalize;
+	}
+	.margins{
+		margin-top: 20px;
+		margin-left: -8px !important;
+		margin-right: -8px !important;
+	}
+	h6{
+		margin-left: 0px !important;
+		margin-right: 0px !important;
+		min-width: 100% !important;
+	}
+	.titlexscompany{
+		margin-right: 0px !important;
+    	margin-left: 0px !important;
+    	margin-bottom: 0px !important;
+	}
+	.border{
+		border: 1px solid #F36323  !important;
+		border-radius:3px;
+	}
+	.row{
+		border-bottom: 0px !important;
+	}
+	.naviboder{
+		border: 0px !important;
+	}
+	.content{
+		margin-top: 80px !important;
+		width: 100% !important;
+    	height: auto !important;
+	}
+	.marginsxs{
+		margin-right: 0px !important;
+    	margin-left: 0px !important;
+	}
+	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+		background-color: transparent !important;
+	}
+	.navbar-default .navbar-toggle{
+		border: 0px !important;
+	}
+	.navbar-nav{
+		text-align: left !important;
+	}
+	.navbar-default{
+		background-color: #ffffff !important;
+		margin-bottom: 10px;
+	}
+	.positionjob h6{
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+	}
+	.floatleft{
+		position: relative;
+	    float: left !important;
+	    padding-top:20px;
+	}
+	.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse{
+		height: auto !important;
+		max-height: 380px !important;
+	}
+	.title-widget{
+		font-size: 16px !important;
+	}
+	.title-median{
+		font-size: 14px !important;
+		font-weight: bold !important;
+	}
+	.logosm{
+		float: right;
+	}
+}
+
+@media (min-width: 768px){
+	.logo{
+		text-align: center !important;
+		padding-top: 10px !important;
+		padding-left: 15px !important;
+	}
+	.content{
+	    margin-top: 25px !important;
+    	width: 100% !important;
+    	height: auto !important;
+	}
+	.title-widget{
+		font-size: 16px !important;
+	}
+	.title-median{
+		font-size: 14px !important;
+		font-weight: bold !important;
+	}
+	
+	.naviboder{
+		border-top: 20px solid #F36323 !important;
+	}
+	
+}
+

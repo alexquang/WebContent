@@ -10,22 +10,14 @@
 <link href="css/footer.css" rel="stylesheet" type="text/css" />
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
 <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript">
-	//Copyright 2014-2015 Twitter, Inc.
-	//Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
-	if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
-		var msViewportStyle = document.createElement('style')
-		msViewportStyle.appendChild(document
-				.createTextNode('@-ms-viewport{width:auto!important}'))
-		document.querySelector('head').appendChild(msViewportStyle)
-	}
-</script>
+<link href="css/normalize.css" rel="stylesheet" type="text/css" />
+<link href="css/cssdevice.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 	<div class="container backgroundcontent">
 		<div class="navigation">
 			<div class="row naviboder">
-				<div class="col-md-3 navipaddingleft">
+				<div class="col-md-3 col-sm-2 hidden-sm hidden-xs navipaddingleft">
 					<form action="#">
 						<div class="input-group stylish-input-group">
 							<input type="text" class="form-control" placeholder="Search">
@@ -37,11 +29,57 @@
 						</div>
 					</form>
 				</div>
-				<div class="col-md-5 logo">
-					<a href="#"><img alt="" width="120px" src="img/logo.v1.png" />
-					</a>
+				<div class="col-md-5 col-sm-12 col-xs-12 logo">
+
+					<a href="#" class="hidden-xs"><img alt=""
+						width="120px" src="img/logo.v1.png" /></a>
+
+					<nav
+						class="navbar navbar-default navbar-fixed-top hidden-lg hidden-md hidden-sm"
+						role="navigation">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed floatleft"
+								data-toggle="collapse" data-target="#menu-navbar-collapse"
+								aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span> <span
+									class="icon-bar"></span> <span class="icon-bar"></span> <span
+									class="icon-bar"></span>
+							</button>
+							<a href="#" class="logosm hidden-lg hidden-md hidden-sm"><img alt="" width="120px" src="img/logo.v1.png" /></a>
+
+						</div>
+						<div class="navbar-collapse collapse" id="menu-navbar-collapse"
+							aria-expanded="true">
+							<ul class="nav navbar-nav">
+
+								<li><a href="index.html"><i class="fa fa-user"></i>
+										Tuyển dụng</a></li>
+								<li><a href="mua-ban.html"><i class="fa fa-cube"
+										aria-hidden="true"></i> Nhà đất</a></li>
+								<li><a href="xeco.html"><i class="fa fa-car"></i> Xe cộ</a></li>
+								<li><a href="nhatro.html"><i class="fa fa-signal"
+										aria-hidden="true"></i> Nhà trọ</a></li>
+								<li><a href="thuevanphong.html"><i
+										class="fa fa-building" aria-hidden="true"></i> Văn phòng cho
+										thuê</a></li>
+								<li><a href="dodientu.html"><i class="fa fa-calculator"
+										aria-hidden="true"></i> Đồ điện tử - Điện máy</a></li>
+								<li><a href="douong.html"><i class="fa fa-beer"
+										aria-hidden="true"></i> Đồ uống - Thực phẩm</a></li>
+								<li><a href="noingoaithat.html"><i class="fa fa-bath"
+										aria-hidden="true"></i> Nội ngoại thất</a></li>
+								<li><a href="thoitrang.html"><i
+										class="fa fa-user-secret" aria-hidden="true"></i> Thời trang</a></li>
+								<!-- 							<li><a href="#"><i class="fa fa-snowflake-o" aria-hidden="true"></i> -->
+								<!-- 									Đặc sản của vùng</a></li> -->
+								<!-- 							<li><a href="#"><i class="fa fa-map-o" aria-hidden="true"></i> -->
+								<!-- 									Địa điểm du lịch</a></li> -->
+
+							</ul>
+						</div>
+					</nav>
 				</div>
-				<div class="col-md-4 right navipaddingright">
+				<div class="col-md-4 col-sm-4 hidden-sm hidden-xs right navipaddingright">
 
 					<div class="row">
 						<div class="col-md-12 language">
@@ -62,7 +100,7 @@
 			</div>
 
 		</div>
-		<div class="slideimage">
+		<div class="hidden-sm hidden-xs slideimage">
 			<div class="row">
 				<div class="col-md-12 padding-0">
 					<img
@@ -72,16 +110,16 @@
 		</div>
 		<div class="content">
 			<div class="row margins">
-				<div class="col-md-2 center nopadding ">
+				<div class="col-md-2 col-sm-4 hidden-xs center nopadding ">
 					<div class="row-fluid summary">
 						<div class="span1" id="category" data-toggle="collapse"
 							data-target="#intro">
 							<div class="row">
-								<div class="col-md-8">
+								<div class="col-md-8 col-sm-8">
 									<span class="glyphicon glyphicon-align-justify"
 										aria-hidden="true"></span> Danh mục
 								</div>
-								<div class="col-md-4">
+								<div class="col-md-4 col-sm-4">
 									<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
 								</div>
 							</div>
@@ -89,55 +127,62 @@
 					</div>
 					<div id="intro" class="collapse in" aria-expanded="true">
 						<ul>
-							<li><a href="index.html"><i class="fa fa-user"></i> Tuyển dụng</a></li>
+							<li><a href="index.html"><i class="fa fa-user"></i>
+									Tuyển dụng</a></li>
 							<li><a href="mua-ban.html"><i class="fa fa-cube"
 									aria-hidden="true"></i> Nhà đất</a></li>
 							<li><a href="xeco.html"><i class="fa fa-car"></i> Xe cộ</a></li>
 							<li><a href="nhatro.html"><i class="fa fa-signal"
 									aria-hidden="true"></i> Nhà trọ</a></li>
-							<li><a href="thuevanphong.html"><i class="fa fa-building" aria-hidden="true"></i> Văn phòng cho thuê</a></li>
-							<li><a href="dodientu.html"><i class="fa fa-calculator" aria-hidden="true"></i>
-									Đồ điện tử - Điện máy</a></li>
-							<li><a href="douong.html"><i class="fa fa-beer" aria-hidden="true"></i>
-									Đồ uống - Thực phẩm</a></li>
-							<li><a href="noingoaithat.html"><i class="fa fa-bath" aria-hidden="true"></i>
-									Nội ngoại thất</a></li>
-							<li><a href="thoitrang.html"><i class="fa fa-user-secret" aria-hidden="true"></i>
-									Thời trang</a></li>
-<!-- 							<li><a href="#"><i class="fa fa-snowflake-o" aria-hidden="true"></i> -->
-<!-- 									Đặc sản của vùng</a></li> -->
-<!-- 							<li><a href="#"><i class="fa fa-map-o" aria-hidden="true"></i> -->
-<!-- 									Địa điểm du lịch</a></li> -->
+							<li><a href="thuevanphong.html"><i
+									class="fa fa-building" aria-hidden="true"></i> Văn phòng cho
+									thuê</a></li>
+							<li><a href="dodientu.html"><i class="fa fa-calculator"
+									aria-hidden="true"></i> Đồ điện tử - Điện máy</a></li>
+							<li><a href="douong.html"><i class="fa fa-beer"
+									aria-hidden="true"></i> Đồ uống - Thực phẩm</a></li>
+							<li><a href="noingoaithat.html"><i class="fa fa-bath"
+									aria-hidden="true"></i> Nội ngoại thất</a></li>
+							<li><a href="thoitrang.html"><i
+									class="fa fa-user-secret" aria-hidden="true"></i> Thời trang</a></li>
+							<!-- 							<li><a href="#"><i class="fa fa-snowflake-o" aria-hidden="true"></i> -->
+							<!-- 									Đặc sản của vùng</a></li> -->
+							<!-- 							<li><a href="#"><i class="fa fa-map-o" aria-hidden="true"></i> -->
+							<!-- 									Địa điểm du lịch</a></li> -->
 						</ul>
 					</div>
 
 				</div>
-				<div class="col-md-8 center">
+				<div class="col-md-8 col-sm-8 col-xs-12 center">
 					<div class="container-fluid border">
-						<div class="row" style="border-bottom:1px solid #002e4e ;">
-							<div class="col-md-2 img">
+						<div class="row marginsxs"
+							style="border-bottom: 1px solid #002e4e;">
+							<div class="col-md-2 col-xs-12 hidden-sm hidden-xs img">
 								<img class="img-thumbnail" alt=""
 									src="http://www1.canthoinfo.com/logo/logo-cobay.jpg">
 							</div>
-							<div class="col-md-10 positionjob">
+							<div class="col-md-10 col-xs-12 positionjob">
 								<div class="row">
-									<div class="col-md-12" style="margin-top:15px;margin-bottom:15px;">
-										<h4>
-											<b><a href="#"> CTY CP PHÂN BÓN VÀ HOÁ CHẤT CẦN THƠ</a></b>
+									<div class="col-md-12 col-xs-12 titlexscompany"
+										style="margin-top: 15px; margin-bottom: 15px;">
+										<h4 class="namecompany">
+											<b><a href="#"> Công Ty TNHH Tư Vấn Và Phát Triển
+													Phần Mềm LARION</a></b>
 										</h4>
 										<h5>Khu Công Nghiệp Trà Nóc I, P.Trà Nóc, Quận Bình Thủy,
 											TP Cần Thơ</h5>
 										<h4 class="colorforheader">
-											<b>TUYỂN DỤNG TẠI ĐÀ NẴNG, HỒ CHÍ MINH, CẦN THƠ</b>
+											<b>TUYỂN DỤNG TẠI ĐÀ NẴNG</b>
 										</h4>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md-6 positionjob">
+							<div class="col-md-6 col-xs-12 positionjob">
 								<h6>
-									<a href="detail.html">1. Phụ Trách Dự Án Phát Triển Sản Phẩm Điện Tử Viễn Thông Tin Học</a>
+									<a href="detail.html">1. Phụ Trách Dự Án Phát Triển Sản
+										Phẩm Điện Tử Viễn Thông Tin Học</a>
 								</h6>
 								<h6>
 									<a href="detail.html">2. Nhân viên Chăm sóc khách hàng</a>
@@ -156,89 +201,57 @@
 								</h6>
 								<h6>
 									<a href="detail.html">7. Nhân viên Hồ sơ thầu</a>
-								</h6>	
-							
-						</div>
-						<div class="col-md-6 positionjob">
-								<h6>
-									<a href="detail.html">8. Đội trưởng Thi công</a>
 								</h6>
-								<h6>
-									<a href="detail.html">9. NV Kỹ thuật công trình</a>
-								</h6>
-								<h6>
-									<a href="detail.html">10.  *** Urgent! 50 JAVA Developers</a>
-								</h6>
-								<h6>
-									<a href="detail.html">11. Nhân viên Tiếp Thị</a>
-								</h6>
-								<h6>
-									<a href="detail.html">12. Nhân viên Cung ứng</a>
-								</h6>
-								<h6>
-									<a href="detail.html">13. Nhân viên Kỹ thuật</a>
-								</h6>
-								<h6>
-									<a href="detail.html">14. Nhân viên môi giới BĐS</a>
-								</h6>
-						</div>
+
+							</div>
+							<!-- 						<div class="col-md-6 col-xs-12 positionjob"> -->
+							<!-- 								<h6> -->
+							<!-- 									<a href="detail.html">8. Đội trưởng Thi công</a> -->
+							<!-- 								</h6> -->
+							<!-- 								<h6> -->
+							<!-- 									<a href="detail.html">9. NV Kỹ thuật công trình</a> -->
+							<!-- 								</h6> -->
+							<!-- 								<h6> -->
+							<!-- 									<a href="detail.html">10.  *** Urgent! 50 JAVA Developers</a> -->
+							<!-- 								</h6> -->
+							<!-- 								<h6> -->
+							<!-- 									<a href="detail.html">11. Nhân viên Tiếp Thị</a> -->
+							<!-- 								</h6> -->
+							<!-- 								<h6> -->
+							<!-- 									<a href="detail.html">12. Nhân viên Cung ứng</a> -->
+							<!-- 								</h6> -->
+							<!-- 								<h6> -->
+							<!-- 									<a href="detail.html">13. Nhân viên Kỹ thuật</a> -->
+							<!-- 								</h6> -->
+							<!-- 								<h6> -->
+							<!-- 									<a href="detail.html">14. Nhân viên môi giới BĐS</a> -->
+							<!-- 								</h6> -->
+							<!-- 						</div> -->
 						</div>
 						<div class="row">
 							<div class="col-md-12 borderlink">
 								<a href="detail2.html">Click vào để xem chi tiết </a>
 							</div>
 						</div>
-					</div>			
+					</div>
 					<hr>
+
 					<div class="container-fluid border">
-						<div class="row" style="border-bottom:1px solid #002e4e ;">
-							<div class="col-md-2 img">
+						<div class="row marginsxs"
+							style="border-bottom: 1px solid #002e4e;">
+							<div class="col-md-2 col-xs-12 hidden-sm hidden-xs img">
 								<img class="img-thumbnail" alt=""
-									src="https://images.vietnamworks.com/pictureofcompany/72/10244550.png">
+									src="http://www1.canthoinfo.com/logo/logo-cobay.jpg">
 							</div>
-							<div class="col-md-10 positionjob">
+							<div class="col-md-10 col-xs-12 positionjob">
 								<div class="row">
-									<div class="col-md-12" style="margin-top:15px;margin-bottom:15px;">
-										<h4>
-											<b><a href="#"> Axon Active Vietnam Company Limited</a></b>
+									<div class="col-md-12 col-xs-12 titlexscompany"
+										style="margin-top: 15px; margin-bottom: 15px;">
+										<h4 class="namecompany">
+											<b><a href="#"> Rentracks Vietnam Co,.ltd</a></b>
 										</h4>
-										<h5>10th Floor, Hai Au Building, 39B Truong Son, Ward 4,
-									Tan Binh District, Ho Chi Minh</h5>
-										<h4 class="colorforheader">
-											<b>TUYỂN DỤNG TẠI ĐÀ NẴNG, HỒ CHÍ MINH, CẦN THƠ</b>
-										</h4>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12 positionjob">
-								<h6>
-									<a href="detail.html">1. [ Up to $1600] Android Mobile Game Developer</a>
-								</h6>
-						</div>
-						
-						</div>
-						<div class="row">
-							<div class="col-md-12 borderlink">
-								<a href="detail2.html">Click vào để xem chi tiết </a>
-							</div>
-						</div>
-					</div>			
-					<hr>
-										<div class="container-fluid border">
-						<div class="row" style="border-bottom:1px solid #002e4e  ;">
-							<div class="col-md-2 img">
-								<img class="img-thumbnail" alt=""
-									src="https://images.vietnamworks.com/pictureofcompany/49/10197315.jpg">
-							</div>
-							<div class="col-md-10 positionjob">
-								<div class="row">
-									<div class="col-md-12" style="margin-top:15px;margin-bottom:15px;">
-										<h4>
-											<b><a href="#"> Công Ty TNHH Phần Mềm FPT (FPT Software)</a></b>
-										</h4>
-										<h5>Tòa nhà FPT Cầu Giấy, phố Duy Tân, phường Dịch Vọng Hậu, quận Cầu Giấy, Hà Nội</h5>
+										<h5>3rd Floor, 456-458 Hai Ba Trung, Tan Dinh Ward,
+											District 1, Ho Chi Minh City</h5>
 										<h4 class="colorforheader">
 											<b>TUYỂN DỤNG TẠI ĐÀ NẴNG</b>
 										</h4>
@@ -247,27 +260,185 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md-12 positionjob">
+							<div class="col-md-6 col-xs-12 positionjob">
 								<h6>
-									<a href="detail.html">1. Hot!! 100 PHP Developers (Competitive Salary)</a>
+									<a href="detail.html">1. Mobile Game Developer Position</a>
 								</h6>
-								<h6>
-									<a href="detail.html">2. Mobile Application Developer, 1 Position, Attractive Salary</a>
-								</h6>
-								
-						</div>
-						
+
+							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-12 borderlink">
 								<a href="detail2.html">Click vào để xem chi tiết </a>
 							</div>
 						</div>
-					</div>			
+					</div>
+					<hr>
+					<div class="container-fluid border">
+						<div class="row marginsxs"
+							style="border-bottom: 1px solid #002e4e;">
+							<div class="col-md-2 col-xs-12 hidden-sm hidden-xs img">
+								<img class="img-thumbnail" alt=""
+									src="http://www1.canthoinfo.com/logo/logo-cobay.jpg">
+							</div>
+							<div class="col-md-10 col-xs-12 positionjob">
+								<div class="row">
+									<div class="col-md-12 col-xs-12 titlexscompany"
+										style="margin-top: 15px; margin-bottom: 15px;">
+										<h4 class="namecompany">
+											<b><a href="#"> Rentracks Vietnam Co,.ltd</a></b>
+										</h4>
+										<h5>3rd Floor, 456-458 Hai Ba Trung, Tan Dinh Ward,
+											District 1, Ho Chi Minh City</h5>
+										<h4 class="colorforheader">
+											<b>TUYỂN DỤNG TẠI ĐÀ NẴNG</b>
+										</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 col-xs-12 positionjob">
+								<h6>
+									<a href="detail.html">1. Mobile Game Developer Position</a>
+								</h6>
+
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 borderlink">
+								<a href="detail2.html">Click vào để xem chi tiết </a>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="container-fluid border">
+						<div class="row marginsxs"
+							style="border-bottom: 1px solid #002e4e;">
+							<div class="col-md-2 col-xs-12 hidden-sm hidden-xs img">
+								<img class="img-thumbnail" alt=""
+									src="http://www1.canthoinfo.com/logo/logo-cobay.jpg">
+							</div>
+							<div class="col-md-10 col-xs-12 positionjob">
+								<div class="row">
+									<div class="col-md-12 col-xs-12 titlexscompany"
+										style="margin-top: 15px; margin-bottom: 15px;">
+										<h4 class="namecompany">
+											<b><a href="#"> Robert Bosch Engineering Vietnam</a></b>
+										</h4>
+										<h5>Unit 11.7, e - town 2, 364 Cong Hoa street, Ward 13</h5>
+										<h4 class="colorforheader">
+											<b>TUYỂN DỤNG TẠI ĐÀ NẴNG</b>
+										</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 col-xs-12 positionjob">
+								<h6>
+									<a href="detail.html">1. Embedded Software Developer</a>
+								</h6>
+								<h6>
+									<a href="detail.html">2. SAP HR ABAP Consultant</a>
+								</h6>
+								<h6>
+									<a href="detail.html">3. Embedded Software Test Engineer</a>
+								</h6>
+								<h6>
+									<a href="detail.html">4. Fresher Embedded Software Engineers</a>
+								</h6>
+								<h6>
+									<a href="detail.html">5. Sharepoint Developer (all Levels)</a>
+								</h6>
+								<h6>
+									<a href="detail.html">6. Java Developer (all Levels)</a>
+								</h6>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 borderlink">
+								<a href="detail2.html">Click vào để xem chi tiết </a>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="container-fluid border">
+						<div class="row marginsxs"
+							style="border-bottom: 1px solid #002e4e;">
+							<div class="col-md-2 col-xs-12 hidden-sm hidden-xs img">
+								<img class="img-thumbnail" alt=""
+									src="http://www1.canthoinfo.com/logo/logo-cobay.jpg">
+							</div>
+							<div class="col-md-10 col-xs-12 positionjob">
+								<div class="row">
+									<div class="col-md-12 col-xs-12 titlexscompany"
+										style="margin-top: 15px; margin-bottom: 15px;">
+										<h4 class="namecompany">
+											<b><a href="#"> Codix Co., Ltd</a></b>
+										</h4>
+										<h5>4th Floor, Etown 3 building, 364 Cong Hoa Street, Ward 13, Tan Binh district, HCMC</h5>
+										<h4 class="colorforheader">
+											<b>TUYỂN DỤNG TẠI ĐÀ NẴNG</b>
+										</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 col-xs-12 positionjob">
+								<h6>
+									<a href="detail.html">1. *urgent* C&SQL Developer – Training in Europe</a>
+								</h6>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 borderlink">
+								<a href="detail2.html">Click vào để xem chi tiết </a>
+							</div>
+						</div>
+					</div>
+					<hr>
+					
+					<div class="container-fluid border">
+						<div class="row marginsxs"
+							style="border-bottom: 1px solid #002e4e;">
+							<div class="col-md-2 col-xs-12 hidden-sm hidden-xs img">
+								<img class="img-thumbnail" alt=""
+									src="http://www1.canthoinfo.com/logo/logo-cobay.jpg">
+							</div>
+							<div class="col-md-10 col-xs-12 positionjob">
+								<div class="row">
+									<div class="col-md-12 col-xs-12 titlexscompany"
+										style="margin-top: 15px; margin-bottom: 15px;">
+										<h4 class="namecompany">
+											<b><a href="#"> SmartOSC</a></b>
+										</h4>
+										<h5>Floor 10, Ha Do Airport Building, 2 Hong Ha Street, Tan Binh, Ho Chi Minh</h5>
+										<h4 class="colorforheader">
+											<b>TUYỂN DỤNG TẠI HỒ CHÍ MINH</b>
+										</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 col-xs-12 positionjob">
+								<h6>
+									<a href="detail.html">1. PHP Leader - Attractive Salary Package</a>
+								</h6>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 borderlink">
+								<a href="detail2.html">Click vào để xem chi tiết </a>
+							</div>
+						</div>
+					</div>
 					<hr>
 				</div>
 
-				<div class="col-md-2 center promotion">
+				<div class="col-md-2 hidden-sm hidden-xs center promotion">
 					<ul>
 						<li><img
 							src="http://www.pythagoras.co.uk/wp-content/uploads/2015/09/Microsoft-Logo-180x180.png" /></li>
@@ -292,7 +463,7 @@
 					<div class="row">
 						<!-- row -->
 
-						<div class="col-lg-3 col-md-3">
+						<div class="col-lg-3 col-md-3 col-sm-6 hidden-xs">
 							<!-- widgets column left -->
 							<ul class="list-unstyled clear-margins">
 								<!-- widgets -->
@@ -300,7 +471,7 @@
 								<li class="widget-container widget_nav_menu">
 									<!-- widgets list -->
 
-									<h1 class="title-widget">THÔNG TIN CHUNG		</h1>
+									<h1 class="title-widget">THÔNG TIN CHUNG</h1>
 
 									<ul>
 										<li><a href="#"><i class="fa fa-angle-double-right"></i>
@@ -312,13 +483,13 @@
 										<li><a href="#"><i class="fa fa-angle-double-right"></i>
 												Liên hệ quảng cáo</a></li>
 										<li><a href="#"><i class="fa fa-angle-double-right"></i>
-												Câu hỏi thường gặp</a></li>									
+												Câu hỏi thường gặp</a></li>
 										<li><a href="#"><i class="fa fa-angle-double-right"></i>
 												Hỗ trợ trực tuyến</a></li>
 										<li><a href="#"><i class="fa fa-angle-double-right"></i>
 												Hướng dẫn đăng tin</a></li>
-<!-- 										<li><a href="#"><i class="fa fa-angle-double-right"></i> -->
-<!-- 												Du lịch Đà Nẵng</a></li> -->
+										<!-- 										<li><a href="#"><i class="fa fa-angle-double-right"></i> -->
+										<!-- 												Du lịch Đà Nẵng</a></li> -->
 									</ul>
 
 								</li>
@@ -331,7 +502,7 @@
 
 
 
-						<div class="col-lg-3 col-md-3">
+						<div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
 							<!-- widgets column left -->
 
 							<ul class="list-unstyled clear-margins">
@@ -347,8 +518,8 @@
 												Tuyển dụng</a></li>
 										<li><a href="#"><i class="fa fa-angle-double-right"></i>
 												Nhà đất</a></li>
-<!-- 										<li><a href="#"><i class="fa fa-angle-double-right"></i> -->
-<!-- 												Xây dựng</a></li> -->
+										<!-- 										<li><a href="#"><i class="fa fa-angle-double-right"></i> -->
+										<!-- 												Xây dựng</a></li> -->
 										<li><a href="#"><i class="fa fa-angle-double-right"></i>
 												Xe cộ</a></li>
 										<li><a href="#"><i class="fa fa-angle-double-right"></i>
@@ -372,7 +543,7 @@
 
 
 
-						<div class="col-lg-3 col-md-3">
+						<div class="col-lg-3 col-md-3 col-sm-3 hidden-sm hidden-xs">
 							<!-- widgets column left -->
 
 							<ul class="list-unstyled clear-margins marginfooter">
@@ -385,8 +556,8 @@
 												Nội ngoại thất</a></li>
 										<li><a href="#"><i class="fa fa-angle-double-right"></i>
 												Thời trang</a></li>
-<!-- 										<li><a href="#"><i class="fa fa-angle-double-right"></i> -->
-<!-- 												Thú cưng - Cá kiễng</a></li> -->
+										<!-- 										<li><a href="#"><i class="fa fa-angle-double-right"></i> -->
+										<!-- 												Thú cưng - Cá kiễng</a></li> -->
 										<li><a href="#"><i class="fa fa-angle-double-right"></i>
 												Đặc sản vùng</a></li>
 										<li><a href="#"><i class="fa fa-angle-double-right"></i>
@@ -404,7 +575,7 @@
 						<!-- widgets column left end -->
 
 
-						<div class="col-lg-3 col-md-3">
+						<div class="col-lg-3 col-md-3 col-sm-6">
 							<!-- widgets column center -->
 
 
