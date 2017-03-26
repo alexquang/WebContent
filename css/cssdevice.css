@@ -13,6 +13,7 @@
 		font-size: 14px !important;
 		margin: auto;
 		text-transform: capitalize;
+		color: #337ab7;
 	}
 	.margins{
 		margin-top: 20px;
@@ -87,6 +88,9 @@
 }
 
 @media (min-width: 768px){
+	.contentmodal{
+		margin: auto;
+	}
 	.logo{
 		text-align: center !important;
 		padding-top: 10px !important;
@@ -109,5 +113,11 @@
 		border-top: 20px solid #F36323 !important;
 	}
 	
+	.namecompany{
+		font-size: 14px !important;
+		margin: auto;
+		text-transform: capitalize;
+		color: #337ab7;
+	}
 }
 
