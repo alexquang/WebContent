@@ -3,6 +3,11 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+ @font-face {
+    font-family: fontdananginfo;
+    src: url(../../fonts/circle3d.ttf);
+}
+ 
 body {
 	width: 100%;
 	height: 100%;
@@ -30,7 +35,7 @@ of those sections to manage the look and feel of the site. */
 .intro-section {
 	height: 100%;
 	background:
-		url('https://livedemo00.template-help.com/wt_61184/images/slide-01-1920x810.jpg')
+		url('../../img/dacsanvung/banner.jpg')
 		no-repeat;
 	background-size: cover;
 	background-position: 80% center;
@@ -50,7 +55,7 @@ of those sections to manage the look and feel of the site. */
 	
 	height: auto;
 	background:
-		url('http://www.opentour.vn/uploads/image/a-tin-tuc-du-lich/am-thuc-nha-trang/tom-hum-nuong.jpg')
+		url('../../img/dacsanvung/banner2.jpg')
 		no-repeat;
 	background-size: cover;
 	background-position: 80% center;
@@ -59,10 +64,42 @@ of those sections to manage the look and feel of the site. */
 }
 
 .contact-section {
-	height: 100%;
-	padding-top: 150px;
+	height: auto;
+	padding-top: 120px;
+	padding-bottom: 120px;
 	text-align: center;
 	background: #eee;
+}
+.roadsidefood-section{
+	height: auto;
+	background:
+		url('http://dulichdanang.vn/uploads/Images/banh-xeo.jpg')
+		no-repeat;
+	background-size: cover;
+	background-position: 80% center;
+	padding-top: 120px;
+	padding-bottom: 120px;
+	
+}
+
+.festival-section{
+	height: auto;
+	background-color:#eee;
+	background-size: cover;
+	background-position: 80% center;
+	padding-top: 120px;
+	padding-bottom: 120px;
+	
+}
+
+.villagejob-section{
+	height: auto;
+	background-color:#eee;
+	background-size: cover;
+	background-position: 80% center;
+	padding-top: 120px;
+	padding-bottom: 120px;
+	
 }
 
 .titlefood h1 {
@@ -87,9 +124,10 @@ of those sections to manage the look and feel of the site. */
 .titlefood {
 	white-space: normal;
 	position: relative;
-	padding: 40px 80px 66px;
+	padding: 20px 35px 25px;
 	background: rgba(255, 255, 255, 0.68);
 	fill: rgba(255, 255, 255, 0.68);
+	border-radius:4px;
 }
 
 .captiontitlefood {
@@ -101,9 +139,9 @@ of those sections to manage the look and feel of the site. */
 }
 
 .btn-primary {
-	color: #fff;
-	background-color: #ef800d;
-	border-color: #ef800d;
+	color: #fff !important;
+	background-color: #ef800d !important;
+	border-color: #ef800d !important;
 }
 
 .btn {
@@ -118,8 +156,6 @@ of those sections to manage the look and feel of the site. */
 	backface-visibility: hidden;
 }
 .navbar-default {
-    background-color: #ffffff !important;
-    border-bottom: 1px solid #ef800d !important;
     border-radius:0px !important;
     border-top: none !important;
     border-right: none !important;
@@ -136,6 +172,11 @@ of those sections to manage the look and feel of the site. */
 	padding:10px;
 	border-radius:3px;
 }
+.menubarfood a:hover{
+	background-color: #749c07 !important;
+	border-color: #749c07 !important;
+	color: #ffffff !important;
+}
 .relative-navbar-right{
 	position: relative;
 }
@@ -143,19 +184,20 @@ of those sections to manage the look and feel of the site. */
     right: 10px !important;
     position: fixed;
     z-index: 1030;
-    top: 10px;
+/*     top: 10px; */
     border-width: 0 0 1px;
 }
 .navbar{
 	margin-bottom: 0px !important;
 }
-.welcomedanang{
-	
-}
 .welcomedanang h1{
 	font-size: 44px;
 	font-weight: bold;
 	text-align: left;
+	
+}
+h1{
+	font-family: fontdananginfo;
 }
 .welcomedanang p{
 	text-align: justify;
@@ -166,6 +208,7 @@ of those sections to manage the look and feel of the site. */
 .thumbnail {
 	padding: 0px !important;
 	border: 0px !important;
+	margin-bottom: 30px !important;
 }
 .caption{
 	text-align: center;
@@ -177,7 +220,7 @@ of those sections to manage the look and feel of the site. */
 
 .thumbnail>img {
     display: block;
-    max-width: 100%;
+    width: 100%;
     min-height: 200px !important;
 }
 .text-regular{
@@ -188,22 +231,61 @@ of those sections to manage the look and feel of the site. */
     height: 3px;
     padding: 0;
     margin: 21px auto 21px 0;
-    background: #b1b1b1;
+    background: #060606;
+    border: none;
+}
+.dividerfood{
+	width: 50px;
+    height: 3px;
+    padding: 0;
+    margin: 21px auto 21px;
+    background: #060606;
     border: none;
 }
 .bg-madison {
-    background: #749c07;
+    background: #060606;
     fill: #749c07;
 }
 .text-regular-titlefood{
 	text-align: justify;
 	padding-bottom: 20px;
 }
-
-
-
-
-
+.titleoceanfood{
+	text-align: center;
+}
+.titleoceanfood h1{
+	font-size: 40px;
+	color:   #060606;
+	font-weight: bold;
+}
+.thumbnailspecial{
+	padding: 0px !important;
+	border: 0px !important;
+}
+.thumbnailspecial>img {
+    display: block;
+    width: 100%;
+    min-height: 200px !important;
+}
+.thumbnailspecial h6 a{
+	color: #ef800d;
+}
+.thumbnailspecial h6 a:hover{
+	color: #749c07;
+}
+.sizeimgroadfood img{
+	height: 250px !important;
+	max-height: 270px;
+}
+.sizeimgroadfood h4 a{
+	color: #ef800d;
+}
+.sizeimgroadfood h4 a:hover{
+	color: #749c07;
+}
+.caption p{
+	text-align: justify;
+}
 
 
 

@@ -1,0 +1,149 @@
+.paddingforhead{
+	margin-top: 10px;
+}
+.paddingforhead ul li{
+	
+}
+.navbar-default{
+	background-color: #ffffff !important;
+	border-color: #e7e7e7 !important;	
+}
+.content-dsvdetail-title h1{
+    color: black;
+    font-weight: 400;
+    margin: 30px 0 0px 0;
+    border-bottom: 1px dotted red;
+}
+.content-dsvdetail h1{
+	margin-top: 0px !important;
+	font-size: 40px !important;
+}
+.content-dsvdetail p{
+	line-height: 25px;
+	text-align: justify;	
+}
+.content-dsvdetail-img img{
+	width: 100%;
+	border-radius: 3px;
+}
+.content-dsvdetail-img{
+	margin-bottom: 30px;	
+}
+.margin{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.social-icons ul{
+	text-align: right;
+}
+.social-icons ul li{
+	margin: 20px;
+}
+
+.menutop{
+	background-color: #ef800d;
+	height: 40px;
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+}
+
+.wrappermenu {
+    position:relative;
+    margin:0 auto;
+    overflow:hidden;
+  	height:40px;
+}
+
+.list {
+    position:absolute;
+    left:0px;
+    top:0px;
+  	min-width:3000px;
+  	margin-left:12px;
+    margin-top:0px;
+}
+
+.list li{
+	display:table-cell;
+    position:relative;
+    text-align:center;
+    cursor:grab;
+    cursor:-webkit-grab;
+    color:#efefef;
+    vertical-align:middle;
+}
+.list li a{
+	border: 0px !important;
+	color: #ffffff;
+}
+.list li a:hover {
+	background-color: #749c07;
+}
+.nav-tabs{
+	border: 0px !important;
+}
+.scroller {
+  text-align:center;
+  cursor:pointer;
+  display:none;
+  padding:7px;
+  padding-top:11px;
+  white-space:no-wrap;
+  vertical-align:middle;
+  color:#fff;
+}
+.scroller-right{
+	
+}
+.nav-tabs>li>a{
+	border-radius: 0px !important;
+}
+.divider{
+	border-top: 1px solid #749c07 !important;
+	margin-top: 0px !important;
+}
+.navbar {
+	border: 0px !important;
+	border-radius:0px !important;
+}
+.lstnearby h4{
+	 color: #ef800d !important;
+}
+.lstnearby p{
+	padding-left: 10px;
+	color: #000000;
+	font-weight: 500;
+}
+.margin-nearby{
+	margin-bottom: 20px;
+}
+.nomargin-nearby{
+	padding-top: 10px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

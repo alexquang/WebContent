@@ -2,6 +2,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>Insert title here</title>
 <link href="css/custom.css" rel="stylesheet" type="text/css" />
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
@@ -9,10 +11,16 @@
 <link href="css/cssdetails.css" rel="stylesheet" type="text/css" />
 <link href="css/footer.css" rel="stylesheet" type="text/css" />
 <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+<link href="css/cssdevicedetail.css" rel="stylesheet" type="text/css" />
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
 </head>
 <body>
 	<div class="container backgroundcontent">
-		<div class="navigation">
+		<div class="navigation hidden-sm hidden-xs">
 			<div class="row naviboder">
 				<div class="col-md-3 navipaddingleft">
 					<form action="#">
@@ -50,40 +58,78 @@
 			</div>
 		</div>
 		<div class="slideimage">
-			<div class="row">
+			<div class="row hidden-sm hidden-xs">
 				<div class="col-md-12 padding-0">
 					<img
 						src="https://www.anerkennung-in-deutschland.de/images/content/testimonial_kheralah_1024x400.jpg" />
 				</div>
+
 			</div>
+			<div class="row header-sm-xs hidden-md hidden-lg navbar-fixed-top">
+				<div class="col-sm-12 col-xs-12 left" onClick="history.go(-1); return false;">
+					<span class="glyphicon glyphicon-menu-left"
+						aria-hidden="true"></span> Trở về
+				</div>
+			</div>
+
+			
 		</div>
 
+<!-- 		<div class="row title-sm-xs hidden-md hidden-lg"> -->
+<!-- 				<div class="col-sm-12 col-xs-12"> -->
+<!-- 					<img alt="" -->
+<!-- 						src="https://images.vietnamworks.com/pictureofcompany/72/10244550.png"> -->
+<!-- 				</div> -->
+<!-- 				<div class="col-sm-12 col-xs-12"> -->
+<!-- 					<h4>Nhân viên Chăm sóc khách hàng & bán hàng qua điện thoại</h4> -->
+<!-- 					<ul class="content-salary-sm-xs"> -->
+<!-- 						<li><i class="fa fa-id-card" aria-hidden="true"></i> Mức -->
+<!-- 							lương: Thỏa thuận</li> -->
+<!-- 						<li><i class="fa fa-users" aria-hidden="true"></i> Nhân viên: -->
+<!-- 							Chính thức</li> -->
+<!-- 						<li><i class="fa fa-location-arrow" aria-hidden="true"></i> -->
+<!-- 							Nơi làm việc: TP. Đà Nẵng</li> -->
+<!-- 					</ul> -->
+<!-- 				</div> -->
+<!-- 			</div> -->
+			
 		<div class="infocompany">
 			<div class="row padding">
-				<div class="col-md-9">
+				<div class="col-md-9 col-lg-9 col-sm-12 col-xs-12">
 					<div class="row">
-						<div class="col-md-3 imgcompanydetails">
-							<img class="img-thumbnail" src="http://www1.canthoinfo.com/logo/logo-xuanphuong.png" />
+						<div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 imgcompanydetails">
+							<img class="img-thumbnail"
+								src="http://www1.canthoinfo.com/logo/logo-xuanphuong.png" />
 						</div>
-						<div class="col-md-9 infocompanydetails">
-						
+						<div class="col-md-9 col-lg-9 col-sm-12 col-xs-12 infocompanydetails">
+
 							<div class="row">
-							  <ul class="nav nav-tabs">
-							    <li><h4>Nhân viên Chăm sóc khách hàng & bán hàng qua điện thoại</h4></li>
-							  </ul>
+								<ul class="nav nav-tabs">
+									<li><h4>Nhân viên Chăm sóc khách hàng & bán hàng qua
+											điện thoại</h4></li>
+								</ul>
 							</div>
-							<ul class="companytitle">
+							<ul class="companytitle hidden-sm hidden-xs">
 								<li><h4>CÔNG TY CỔ PHẦN CADICO</h4></li>
-								<li><h6>L29, Đường 27, KDC Cty xây dựng 8, P.Hưng Thạnh, Q.Cái Răng, TP.Cần Thơ</h6></li>
+								<li><h6>L29, Đường 27, KDC Cty xây dựng 8, P.Hưng
+										Thạnh, Q.Cái Răng, TP.Cần Thơ</h6></li>
 							</ul>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 salarycompanydetails">
+				<div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 salarycompanydetails">
 					<ul>
-						<li><p><i class="fa fa-id-card" aria-hidden="true"></i> Mức lương: 500 ~ 1500USD</p></li>
-						<li><p><i class="fa fa-users" aria-hidden="true"></i> Nhân viên thời vụ</p></li>
-						<li><p><i class="fa fa-location-arrow" aria-hidden="true"></i> TP.Đà Nẵng</p></li>
+						<li><p>
+								<i class="fa fa-id-card" aria-hidden="true"></i> Mức lương: 500
+								~ 1500USD
+							</p></li>
+						<li><p>
+								<i class="fa fa-users" aria-hidden="true"></i> Nhân viên thời vụ
+							</p></li>
+						<li><p>
+								<i class="fa fa-location-arrow" aria-hidden="true"></i> TP.Đà
+								Nẵng
+							</p></li>
 					</ul>
 				</div>
 			</div>
@@ -92,7 +138,10 @@
 		<div class="desciption">
 			<div class="row margindesciption">
 				<div class="col-md-6 borderdesciption">
-					<h4><i class="fa fa-pencil-square-o" aria-hidden="true"></i> MÔ TẢ CÔNG VIỆC</h4>
+					<h4 class="hidden-sm hidden-xs">
+						<i class="fa fa-pencil-square-o" aria-hidden="true"></i> MÔ TẢ
+						CÔNG VIỆC
+					</h4>
 					<h5>1. Thông tin chung</h5>
 					<div class="contentdesciption">
 						- Số lượng tuyển dụng: 2 kỹ sư<br /> - Giới tính: Nam<br /> -
@@ -124,23 +173,27 @@
 						- Đơn xin việc<br /> - Sơ yếu lý lịch có xác nhận của địa phương
 						cư trú<br /> - Ảnh: 02 tấm (3 x 4)<br /> - Giấy chứng nhận sức
 						khỏe : mới cấp trong vòng 06 tháng.<br /> - Bản sao bằng cấp<br />
-						- Bản sao CMND, hộ khẩu.<br />
-						<br /> Nộp hồ sơ: Qua email: phongnhansu@cfccobay.com, hoặc nộp
-						trực tiếp tại phòng nhân sự công ty.<br /> Công ty cổ phần Phân
-						Bón và Hóa Chất Cần Thơ<br /> Địa chỉ: KCN Trà Nóc I,P Trà Nóc
-						Quận Bình Thủy,TP Cần Thơ<br /> <br /> Hạn chót nhận hồ sơ: 15
-						tháng 3, 2017<br /> Lưu ý: Chỉ cần gửi sơ yếu lý lịch kèm theo
-						hình ảnh khi nộp qua email và bổ sung hồ sơ khi đi phỏng vấn.
-						Không trả hồ sơ nếu hồ sơ không đạt yêu cầu.<br />
+						- Bản sao CMND, hộ khẩu.<br /> <br /> Nộp hồ sơ: Qua email:
+						phongnhansu@cfccobay.com, hoặc nộp trực tiếp tại phòng nhân sự
+						công ty.<br /> Công ty cổ phần Phân Bón và Hóa Chất Cần Thơ<br />
+						Địa chỉ: KCN Trà Nóc I,P Trà Nóc Quận Bình Thủy,TP Cần Thơ<br />
+						<br /> Hạn chót nhận hồ sơ: 15 tháng 3, 2017<br /> Lưu ý: Chỉ
+						cần gửi sơ yếu lý lịch kèm theo hình ảnh khi nộp qua email và bổ
+						sung hồ sơ khi đi phỏng vấn. Không trả hồ sơ nếu hồ sơ không đạt
+						yêu cầu.<br />
 					</div>
 
 					<div class="row margintopaddress">
 						<div class="col-md-6 titlemap">
-							<h4><i class="fa fa-university" aria-hidden="true"></i> NƠI LÀM VIỆC</h4>
+							<h4>
+								<i class="fa fa-university" aria-hidden="true"></i> NƠI LÀM VIỆC
+							</h4>
 						</div>
 						<div class="col-md-6 viewmap">
-							<a style="cursor: pointer;" data-toggle="modal" data-target="#myModal"><i class="fa fa-map" aria-hidden="true"></i> Xem Bản Đồ</a>
-							  <!-- Modal -->
+							<a class="hidden-sm hidden-xs" style="cursor: pointer;"
+								data-toggle="modal" data-target="#myModal"><i
+								class="fa fa-map" aria-hidden="true"></i> Xem Bản Đồ</a>
+							<!-- Modal -->
 							<div class="modal fade" id="myModal" role="dialog">
 								<div class="modal-dialog">
 
@@ -163,58 +216,88 @@
 						</div>
 						<div class="row">
 							<div class="col-md-12 roomaddress">
-								<h5><i class="icon-building-o icon-poi"></i> Địa chỉ</h5>
-								<p>Phòng X0-4.59, tầng 4, Sunrise City North Tower, 27 Nguyễn Hữu Thọ, Phường Tân Hưng, Quận 7, HCM</p>
+								<h5>
+									<i class="icon-building-o icon-poi"></i> Địa chỉ
+								</h5>
+								<p>Phòng X0-4.59, tầng 4, Sunrise City North Tower, 27
+									Nguyễn Hữu Thọ, Phường Tân Hưng, Quận 7, HCM</p>
 							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-md-12 splitline">
-						</div>
+					<div class="row hidden-sm hidden-xs">
+						<div class="col-md-12 splitline"></div>
 					</div>
-					<div class="row recruitmentorthertitle">
-						<h4><i class="fa fa-users" aria-hidden="true"></i> THÔNG TIN TUYỂN DỤNG KHÁC</h4>
+					<div class="row recruitmentorthertitle hidden-sm hidden-xs">
+						<h4>
+							<i class="fa fa-users" aria-hidden="true"></i> THÔNG TIN TUYỂN
+							DỤNG KHÁC
+						</h4>
 						<div class="col-md-6 recruitmentorther">
 							<ul>
-								<li><a href="#"><i class="fa fa-check" aria-hidden="true"></i> Đội trưởng Thi công xây dựng</a></li>
-								<li><a href="#"><i class="fa fa-check" aria-hidden="true"></i> Nhân viên Thi công xây dựng</a></li>
-								<li><a href="#"><i class="fa fa-check" aria-hidden="true"></i> Trưởng Ban QLDA</a></li>
-								<li><a href="#"><i class="fa fa-check" aria-hidden="true"></i> Nhân viên Tổng hợp xây dựng</a></li>
-								<li><a href="#"><i class="fa fa-check" aria-hidden="true"></i> Trưởng phòng Xây Dựng</a></li>
-								<li><a href="#"><i class="fa fa-check" aria-hidden="true"></i> Nhân viên Thiết kế viễn thông</a></li>
-								<li><a href="#"><i class="fa fa-check" aria-hidden="true"></i> Nhân viên Hồ sơ thầu</a></li>
-								<li><a href="#"><i class="fa fa-check" aria-hidden="true"></i> Đội trưởng Thi công</a></li>
+								<li><a href="#"><i class="fa fa-check"
+										aria-hidden="true"></i> Đội trưởng Thi công xây dựng</a></li>
+								<li><a href="#"><i class="fa fa-check"
+										aria-hidden="true"></i> Nhân viên Thi công xây dựng</a></li>
+								<li><a href="#"><i class="fa fa-check"
+										aria-hidden="true"></i> Trưởng Ban QLDA</a></li>
+								<li><a href="#"><i class="fa fa-check"
+										aria-hidden="true"></i> Nhân viên Tổng hợp xây dựng</a></li>
+								<li><a href="#"><i class="fa fa-check"
+										aria-hidden="true"></i> Trưởng phòng Xây Dựng</a></li>
+								<li><a href="#"><i class="fa fa-check"
+										aria-hidden="true"></i> Nhân viên Thiết kế viễn thông</a></li>
+								<li><a href="#"><i class="fa fa-check"
+										aria-hidden="true"></i> Nhân viên Hồ sơ thầu</a></li>
+								<li><a href="#"><i class="fa fa-check"
+										aria-hidden="true"></i> Đội trưởng Thi công</a></li>
 							</ul>
 						</div>
-						<div class="col-md-6 recruitmentorther" >
+						<div class="col-md-6 recruitmentorther">
 							<ul>
-								<li><a href="#"><i class="fa fa-check" aria-hidden="true"></i> NV Kỹ thuật công trình</a></li>
-								<li><a href="#"><i class="fa fa-check" aria-hidden="true"></i> Trưởng Phòng Tiếp Thị</a></li>
-								<li><a href="#"><i class="fa fa-check" aria-hidden="true"></i> Nhân viên Tiếp Thị</a></li>
-								<li><a href="#"><i class="fa fa-check" aria-hidden="true"></i> Nhân viên Cung ứng</a></li>
-								<li><a href="#"><i class="fa fa-check" aria-hidden="true"></i> Nhân viên Admin</a></li>
-								<li><a href="#"><i class="fa fa-check" aria-hidden="true"></i> Nhân viên môi giới BĐS</a></li>
-								<li><a href="#"><i class="fa fa-check" aria-hidden="true"></i> Nhân viên Kỹ thuật</a></li>
+								<li><a href="#"><i class="fa fa-check"
+										aria-hidden="true"></i> NV Kỹ thuật công trình</a></li>
+								<li><a href="#"><i class="fa fa-check"
+										aria-hidden="true"></i> Trưởng Phòng Tiếp Thị</a></li>
+								<li><a href="#"><i class="fa fa-check"
+										aria-hidden="true"></i> Nhân viên Tiếp Thị</a></li>
+								<li><a href="#"><i class="fa fa-check"
+										aria-hidden="true"></i> Nhân viên Cung ứng</a></li>
+								<li><a href="#"><i class="fa fa-check"
+										aria-hidden="true"></i> Nhân viên Admin</a></li>
+								<li><a href="#"><i class="fa fa-check"
+										aria-hidden="true"></i> Nhân viên môi giới BĐS</a></li>
+								<li><a href="#"><i class="fa fa-check"
+										aria-hidden="true"></i> Nhân viên Kỹ thuật</a></li>
 							</ul>
 						</div>
 					</div>
-					<div class="col-md-12" style="text-align: right;">
-						<h3><a style="background-color: #003B64;color: #ffffff;" class="btn btn-sm" href="index.html">Trở về</a></h3>
+					<div class="col-md-12 hidden-sm hidden-xs"
+						style="text-align: right;">
+						<h3>
+							<a style="background-color: #003B64; color: #ffffff;"
+								class="btn btn-sm" href="index.html">Trở về</a>
+						</h3>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6 hidden-sm hidden-xs">
 					<div class="row titlecompanydetail">
-						<h4><i class="fa fa-list-alt" aria-hidden="true"></i> SƠ LƯỢC CÔNG TY</h4>
+						<h4>
+							<i class="fa fa-list-alt" aria-hidden="true"></i> SƠ LƯỢC CÔNG TY
+						</h4>
 						<div class="col-md-6">
 							<ul>
 								<li><span><b>Số Giấy Phép Đăng Ký Kinh Doanh</b></span></li>
 								<li><p class="paddingtitlecompanydetail">0312353730</p></li>
 								<li><span><b>Website</b></span></li>
-								<li><p><a target="_blank" href="http://dananginfo.vn/template" class="paddingtitlecompanydetail">dananginfo.vn</a></p></li>
+								<li><p>
+										<a target="_blank" href="http://dananginfo.vn/template"
+											class="paddingtitlecompanydetail">dananginfo.vn</a>
+									</p></li>
 								<li><span><b>Trang Facebook Fanpage</b></span></li>
 								<li><p class="paddingtitlecompanydetail">facebook.com/IVSCompany</p></li>
 								<li><span><b>Ngôn Ngữ Sử Dụng</b></span></li>
-								<li><p class="paddingtitlecompanydetail">Tiếng việt/ Tiếng Anh</p></li>
+								<li><p class="paddingtitlecompanydetail">Tiếng việt/
+										Tiếng Anh</p></li>
 							</ul>
 						</div>
 						<div class="col-md-6">
@@ -234,8 +317,11 @@
 							</ul>
 						</div>
 					</div>
-					<div class="imgcompany">
-						<h4><i class="fa fa-file-image-o" aria-hidden="true"></i> HÌNH ẢNH CÔNG TY</h4>
+					<div class="imgcompany hidden-sm hidden-xs">
+						<h4>
+							<i class="fa fa-file-image-o" aria-hidden="true"></i> HÌNH ẢNH
+							CÔNG TY
+						</h4>
 						<!-- Image Company -->
 
 						<div id="carousel-example-generic" class="carousel slide"
@@ -279,7 +365,10 @@
 						<!-- End Image Company -->
 					</div>
 					<div class="introcompany">
-						<h4><i class="fa fa-info-circle" aria-hidden="true"></i> THÔNG TIN CÔNG TY</h4>
+						<h4>
+							<i class="fa fa-info-circle" aria-hidden="true"></i> THÔNG TIN
+							CÔNG TY
+						</h4>
 						<p>Vnetwork chuyên cung cấp các sản phẩm dịch vụ công nghệ như
 							Máy chủ, VPS, Hosting, Email Server, Domain, Website; Phát triển
 							ứng dụng quản lý, một số lĩnh vực khác liên quan đến các giải
@@ -302,7 +391,7 @@
 					<div class="row">
 						<!-- row -->
 
-						<div class="col-lg-3 col-md-3">
+						<div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
 							<!-- widgets column left -->
 							<ul class="list-unstyled clear-margins">
 								<!-- widgets -->
@@ -341,7 +430,7 @@
 
 
 
-						<div class="col-lg-3 col-md-3">
+						<div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
 							<!-- widgets column left -->
 
 							<ul class="list-unstyled clear-margins">
@@ -382,7 +471,7 @@
 
 
 
-						<div class="col-lg-3 col-md-3">
+						<div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
 							<!-- widgets column left -->
 
 							<ul class="list-unstyled clear-margins">
@@ -424,7 +513,7 @@
 						<!-- widgets column left end -->
 
 
-						<div class="col-lg-3 col-md-3">
+						<div class="col-lg-3 col-md-3 col-sm-6">
 							<!-- widgets column center -->
 
 
@@ -435,26 +524,25 @@
 								<li class="widget-container widget_recent_news">
 									<!-- widgets list -->
 
-									<h1 class="title-widget">Contact Detail</h1>
+									<h1 class="title-widget">ĐỊA CHỈ LIÊN HỆ</h1>
 
 									<div class="footerp">
 
-										<h2 class="title-median">Webenlance Pvt. Ltd.</h2>
+										<h2 class="title-median">Hoang Giang Company</h2>
 										<p>
-											<b>Email id:</b> <a href="mailto:info@webenlance.com">info@webenlance.com</a>
+											<b>Email id:</b> <a href="mailto:info@webenlance.com">info@dananginfo.vn</a>
 										</p>
 										<p>
 											<b>Helpline Numbers </b> <b style="color: #ffc106;">(8AM
-												to 10PM):</b> +91-8130890090, +91-8130190010
+												to 10PM):</b>
 										</p>
 
 										<p>
 											<b>Corp Office / Postal Address</b>
 										</p>
 										<p>
-											<b>Phone Numbers : </b>7042827160,
+											<b>Phone Numbers : </b>+84-941 415 514
 										</p>
-										<p>011-27568832, 9868387223</p>
 									</div>
 
 									<div class="social-icons">
